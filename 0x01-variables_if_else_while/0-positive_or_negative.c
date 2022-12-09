@@ -5,7 +5,7 @@
 /**
  * main - main function to generate a random number
  *
- * Return: Always 0 (Success)
+ * Return: Always 0 (success)
  *
  */
 
@@ -19,6 +19,10 @@ int main(void)
 	if (n > 0)
 	{
 		printf("%d is positive\n", n);
+	}
+	else if (n == 0)
+	{
+		printf("%d iszero\n", n);
 	}
 	else if (n < 0)
 	{
