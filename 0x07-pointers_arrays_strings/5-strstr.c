@@ -26,20 +26,20 @@ char *_strstr(char *haystack, char *needle)
 			while (needle[j] != '\0')
 			{
 				if (haystack[x] == needle[j])
-				x++, j++;
+					x++, j++;
 
-			        else
-				break;
+				else
+					break;
 			} /* if matched throughout, return haystack */
 
-		        if (needle[j] == '\0')
+			if (needle[j] == '\0')
 			{
-			        return (haystack + i);
+				return (haystack + i);
 			}
 		}
 
-	        i++;
+		i++;
 	}
 
-        return (NULL); /* No match */
-}	
+	return (NULL); /* No match */
+}
